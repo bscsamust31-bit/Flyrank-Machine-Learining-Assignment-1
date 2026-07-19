@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chashman Aslam — ML Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0f1e;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a0f1e 0%, #0d2137 100%);
+      border-bottom: 1px solid #1e3a5f;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #38bdf8;
+      letter-spacing: -0.5px;
+    }
+
+    header p.tagline {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+
+    .badges {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: #1e3a5f;
+      color: #38bdf8;
+      border: 1px solid #2563eb44;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+
+    section { margin-bottom: 60px; }
+
+    section h2 {
+      font-size: 1.4rem;
+      color: #38bdf8;
+      border-left: 3px solid #38bdf8;
+      padding-left: 12px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: #0d1f35;
+      border: 1px solid #1e3a5f;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: #38bdf8; }
+
+    .card h3 {
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1e3a5f;
+      color: #7dd3fc;
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin: 6px 4px 0 0;
+    }
+
+    .coming-soon {
+      color: #64748b;
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .contact-links a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #38bdf844;
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .contact-links a:hover { border-color: #38bdf8; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #334155;
+      font-size: 0.85rem;
+      border-top: 1px solid #1e3a5f;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Chashman Aslam</h1>
+  <p class="tagline">ML Engineer in Training · FlyRank Intern · BSCS @ MUST Multan</p>
+  <div class="badges">
+    <span class="badge">Machine Learning</span>
+    <span class="badge">Medical Imaging AI</span>
+    <span class="badge">Search Intelligence</span>
+    <span class="badge">PyTorch · Scikit-learn</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- About -->
+  <section>
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        Semester 6 BSCS student at MUST Multan, currently completing an ML internship at FlyRank
+        (via Neurofive Solutions). I build end-to-end ML pipelines — from EDA and feature
+        engineering to model deployment — with a focus on medical imaging AI and search
+        intelligence systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>NOOR — National Offender Observatory & Response System</h3>
+      <p>XGBoost/MLP recidivism scoring engine with multilingual FAISS case-linking and an Urdu RAG legal chatbot. Built for the Pakistan Youth Incubation Competition.</p>
+      <span class="tag">XGBoost</span>
+      <span class="tag">FAISS</span>
+      <span class="tag">RAG</span>
+      <span class="tag">AUC-ROC 0.726</span>
+    </div>
+
+    <div class="card">
+      <h3>NeuroScan AI — Brain MRI Analysis</h3>
+      <p>ConvNeXt-CBAM + Grad-CAM++ for Alzheimer's classification. Custom brain masking constrains activations to tissue. Deployed on Streamlit Cloud.</p>
+      <span class="tag">ConvNeXt</span>
+      <span class="tag">Grad-CAM++</span>
+      <span class="tag">Streamlit</span>
+      <span class="tag">Medical Imaging</span>
+    </div>
+
+    <div class="card">
+      <h3>SWAG — Surgical Workflow Anticipative Generation</h3>
+      <p>Multi-file PyTorch/MONAI/timm implementation of the SP* variant on Cholec80. ViT frame encoder, Windowed Self-Attention, Prior Knowledge Embedding, and a Streamlit dashboard.</p>
+      <span class="tag">PyTorch</span>
+      <span class="tag">MONAI</span>
+      <span class="tag">ViT</span>
+      <span class="tag">Surgical AI</span>
+    </div>
+
+    <div class="card">
+      <h3>FlyRank ML Internship — Search Intelligence</h3>
+      <p>CTR/Engagement Opportunity Scoring lane. EDA on NYC Airbnb data, data contract on 78M-row warehouse, feature engineering on GSC daily performance data.</p>
+      <span class="tag">DuckDB</span>
+      <span class="tag">Feature Engineering</span>
+      <span class="tag">Search Console</span>
+      <span class="tag">In Progress</span>
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <div class="card">
+      <p><strong style="color:#e2e8f0">ML / DL:</strong> PyTorch, Scikit-learn, XGBoost, MONAI, timm, Hugging Face</p>
+      <p style="margin-top:10px"><strong style="color:#e2e8f0">Data:</strong> DuckDB, Pandas, NumPy, Parquet, BigQuery</p>
+      <p style="margin-top:10px"><strong style="color:#e2e8f0">Deploy:</strong> Streamlit, GitHub Pages, Colab, OpenRouter API</p>
+      <p style="margin-top:10px"><strong style="color:#e2e8f0">Languages:</strong> Python, SQL, HTML/CSS</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Roll No. 2023-CS-F031 · Section A · MUST Multan</p>
+      <div class="contact-links">
+        <a href="https://github.com/bscsamust31-bit" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/chashman-aslam" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Chashman Aslam · Built for FlyRank Portfolio Builder Track
+</footer>
+
+</body>
+</html>
